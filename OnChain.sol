@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
+// FlowersOnChain NFT
 pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/utils/Strings.sol";
@@ -24,6 +25,7 @@ contract MyEpicNFT is ERC721URIStorage {
         "<style>tspan { white-space:pre }.s0 { fill: #9100ff } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>",
         "<style>tspan { white-space:pre }.s0 { fill: #0005ff } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>"
     ];
+    string stem = "<style>tspan { white-space:pre }.s55 { fill: #009a0f } </style><g ><path class='s55' d='m236 449h27v157h-27v-157z' /></g>";
     string[] head_1 = [
         "<style>tspan { white-space:pre }.s18 { fill: #00ffdf } </style><g ><path class='s18' d='m250 380c-71.89 0-130-58.11-130-130c0-71.89 58.11-130 130-130c71.89 0 130 58.11 130 130c0 71.89-58.11 130-130 130z' /></g>",
         "<style>tspan { white-space:pre }.s18 { fill: #0083ff } </style><g ><path class='s18' d='m250 380c-71.89 0-130-58.11-130-130c0-71.89 58.11-130 130-130c71.89 0 130 58.11 130 130c0 71.89-58.11 130-130 130z' /></g>",
@@ -56,8 +58,8 @@ contract MyEpicNFT is ERC721URIStorage {
     ];
     string[] petal_3_1 = [
         "<style>tspan { white-space:pre }.s6 { fill: #ff00ff } </style><g ><g ><path class='s6' d='m390.5 312c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
-        "<style>tspan { white-space:pre }.s6 { fill: #00ff19 } </style><g ><g ><path class='s6' d='m390.5 312c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
-        "<style>tspan { white-space:pre }.s6 { fill: #ff0035 } </style><g ><g ><path class='s6' d='m390.5 312c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
+        "<style>tspan { white-space:pre }.s6 { fill: #ff0035 } </style><g ><g ><path class='s6' d='m390.5 312c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
+        "<style>tspan { white-space:pre }.s6 { fill: #00ff19 } </style><g ><g ><path class='s6' d='m390.5 312c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
     ];
     string[] petal_3_2 = [
         "<style>tspan { white-space:pre }.s7 { fill: #ff9700 } </style><g ><g ><path class='s7' d='m386 280c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>",
@@ -65,9 +67,9 @@ contract MyEpicNFT is ERC721URIStorage {
         "<style>tspan { white-space:pre }.s7 { fill: #0100ff } </style><g ><g ><path class='s7' d='m386 280c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>"
     ];
     string[] petal_4_1 = [
-        "<style>tspan { white-space:pre }.s8 { fill: #ff00ff } </style><g ><g ><path class='s8' d='m346.5 418c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
         "<style>tspan { white-space:pre }.s8 { fill: #00ff19 } </style><g ><g ><path class='s8' d='m346.5 418c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
-        "<style>tspan { white-space:pre }.s8 { fill: #ff0035 } </style><g ><g ><path class='s8' d='m346.5 418c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
+        "<style>tspan { white-space:pre }.s8 { fill: #ff0035 } </style><g ><g ><path class='s8' d='m346.5 418c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
+        "<style>tspan { white-space:pre }.s8 { fill: #ff00ff } </style><g ><g ><path class='s8' d='m346.5 418c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
 
     ];
     string[] petal_4_2 = [
@@ -87,10 +89,9 @@ contract MyEpicNFT is ERC721URIStorage {
         "<style>tspan { white-space:pre }.s11 { fill: #0100ff } </style><g ><g ><path class='s11' d='m250 416c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>"
     ];
     string[] petal_6_1 = [
+        "<style>tspan { white-space:pre }.s12 { fill: #ff0035 } </style><g ><g ><path class='s12' d='m139.5 416c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
         "<style>tspan { white-space:pre }.s12 { fill: #ff00ff } </style><g ><g ><path class='s12' d='m139.5 416c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
-        "<style>tspan { white-space:pre }.s12 { fill: #00ff19 } </style><g ><g ><path class='s12' d='m139.5 416c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>",
-        "<style>tspan { white-space:pre }.s12 { fill: #ff0035 } </style><g ><g ><path class='s12' d='m139.5 416c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
-
+        "<style>tspan { white-space:pre }.s12 { fill: #00ff19 } </style><g ><g ><path class='s12' d='m139.5 416c-34.56 0-62.5-27.94-62.5-62.5c0-34.56 27.94-62.5 62.5-62.5c34.56 0 62.5 27.94 62.5 62.5c0 34.56-27.94 62.5-62.5 62.5z' /></g></g>"
     ];
     string[] petal_6_2 = [
         "<style>tspan { white-space:pre }.s13 { fill: #ff9700 } </style><g ><g ><path class='s13' d='m151 375c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>",
@@ -117,6 +118,27 @@ contract MyEpicNFT is ERC721URIStorage {
         "<style>tspan { white-space:pre }.s17 { fill: #ff9700 } </style><g ><g ><path class='s17' d='m151 186c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>",
         "<style>tspan { white-space:pre }.s17 { fill: #1900ff } </style><g ><g ><path class='s17' d='m151 186c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>",
         "<style>tspan { white-space:pre }.s17 { fill: #efff00 } </style><g ><g ><path class='s17' d='m151 186c-16.59 0-30-13.41-30-30c0-16.59 13.41-30 30-30c16.59 0 30 13.41 30 30c0 16.59-13.41 30-30 30z' /></g></g>"
+    ];
+    string[] extra = [
+        "<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
+        "<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
+        "<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
+        "<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
+        "<style>tspan { white-space:pre }.s37 { fill: #000000 } .s67 { fill: #00ff13 } </style><g ><g ><path class='s37' d='m160 57h180v17h-180v-17z' /><path class='s37' d='m204 20h91v54h-91v-54z' /><path class='s67' d='m204 36h91v10h-91v-10z' /></g></g>",
+        "<style>tspan { white-space:pre }.s37 { fill: #8a8a8a } .s68 { fill: #29ff00 } </style><g ><path class='s37' d='m92.99 297.16l14.85-14.85l14.85 14.85l-14.85 14.85l-14.85-14.85z' /><path class='s68' d='m108 301c-2.21 0-4-1.79-4-4c0-2.21 1.79-4 4-4c2.21 0 4 1.79 4 4c0 2.21-1.79 4-4 4z' /></g>"
+
+    ];
+    string[] eyes = [
+        "<style>tspan { white-space:pre }.s20 { fill: #ffffff } .s1 { fill: #506e98 } .s2 { fill: #000000 } </style><g ><g ><path class='s20' d='m204 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s20' d='m297 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s2' d='m302 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /><path class='s2' d='m198 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /></g></g></svg>",
+        "<style>tspan { white-space:pre }.s20 { fill: #ffffff } .s1 { fill: #506e98 } .s2 { fill: #000000 } </style><g ><g ><path class='s20' d='m204 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s20' d='m297 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s2' d='m302 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /><path class='s2' d='m198 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /></g></g></svg>",
+        "<style>tspan { white-space:pre }.s20 { fill: #ffffff } .s1 { fill: #506e98 } .s2 { fill: #000000 } </style><g ><g ><path class='s20' d='m204 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s20' d='m297 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s2' d='m302 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /><path class='s2' d='m198 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /></g></g></svg>",
+        "<style>tspan { white-space:pre }.s20 { fill: #ffffff } .s1 { fill: #506e98 } .s2 { fill: #000000 } </style><g ><g ><path class='s20' d='m204 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s20' d='m297 279c-17.14 0-31-13.86-31-31c0-17.14 13.86-31 31-31c17.14 0 31 13.86 31 31c0 17.14-13.86 31-31 31z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s1' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s2' d='m302 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /><path class='s2' d='m198 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /><path class='s2' d='m176 216h52v10h-52v-10z' /><path class='s2' d='m273 215h52v10h-52v-10z' /></g></g></svg>"
+    ];
+    string[] mouth = [
+        "<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>",
+        "<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>",
+        "<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>",
+        "<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>"
     ];
 
     event newEpicNFTMinted(address sender, uint256 tokenId);
@@ -147,7 +169,8 @@ contract MyEpicNFT is ERC721URIStorage {
         string memory b = background[rand];
 
         string memory combinedSvg1 = string(
-            abi.encodePacked(b, 
+            abi.encodePacked(b,
+                            stem, 
                             petal_1_1[rand], 
                             petal_1_2[rand],
                             petal_2_1[rand],
@@ -178,7 +201,7 @@ contract MyEpicNFT is ERC721URIStorage {
                             petal_8_2[rand]
                             )
         );
-        
+
         string memory combinedSvg5 = string(
             abi.encodePacked(head_1[rand], 
                             head_2[rand]
