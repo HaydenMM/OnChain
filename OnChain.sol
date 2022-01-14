@@ -17,9 +17,7 @@ contract MyEpicNFT is ERC721URIStorage {
 	string svgPartTwo= "</svg>";
 	string[] background = [
     	"<style>tspan { white-space:pre }.s0 { fill: #efff00 } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>",
-    	"<style>tspan { white-space:pre }.s0 { fill: #00c5ff } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>",
     	"<style>tspan { white-space:pre }.s0 { fill: #ff7900 } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>",
-    	"<style>tspan { white-space:pre }.s0 { fill: #9100ff } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>",
     	"<style>tspan { white-space:pre }.s0 { fill: #0005ff } </style><g ><path class='s0' d='m0 0h500v500h-500v-500z' /></g>"
 	];
 	string stem = "<style>tspan { white-space:pre }.s55 { fill: #009a0f } </style><g ><path class='s55' d='m236 449h27v157h-27v-157z' /></g>";
@@ -120,7 +118,6 @@ contract MyEpicNFT is ERC721URIStorage {
     	"<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
     	"<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
     	"<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
-    	"<style>tspan { white-space:pre }.s37 { fill: #ff0089 } </style><g ><path class='s37' d='m250 279c-16.04 0-29-12.96-29-29c0-16.04 12.96-29 29-29c16.04 0 29 12.96 29 29c0 16.04-12.96 29-29 29z' /></g>",
     	"<style>tspan { white-space:pre }.s37 { fill: #000000 } .s67 { fill: #00ff13 } </style><g ><g ><path class='s37' d='m160 57h180v17h-180v-17z' /><path class='s37' d='m204 20h91v54h-91v-54z' /><path class='s67' d='m204 36h91v10h-91v-10z' /></g></g>",
     	"<style>tspan { white-space:pre }.s37 { fill: #8a8a8a } .s68 { fill: #29ff00 } </style><g ><path class='s37' d='m92.99 297.16l14.85-14.85l14.85 14.85l-14.85 14.85l-14.85-14.85z' /><path class='s68' d='m108 301c-2.21 0-4-1.79-4-4c0-2.21 1.79-4 4-4c2.21 0 4 1.79 4 4c0 2.21-1.79 4-4 4z' /></g>"
  
@@ -131,7 +128,7 @@ contract MyEpicNFT is ERC721URIStorage {
 	string eye_2_2 = "<style>tspan { white-space:pre }.s25 { fill: #000000 } </style><g ><g ><path class='s25' d='m302 256c-4.42 0-8-3.58-8-8c0-4.42 3.58-8 8-8c4.42 0 8 3.58 8 8c0 4.42-3.58 8-8 8z' /></g></g>";
 	string[] eye_3 = [
     	"<style>tspan { white-space:pre }.s26 { fill: #9b73ff } </style><g ><g ><path class='s26' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s26' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /></g></g>",
-    	"<style>tspan { white-space:pre }.s26 { fill: #1900ff } </style><g ><g ><path class='s26' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s26' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /></g></g>",
+    	"<style>tspan { white-space:pre }.s26 { fill: #00ff19 } </style><g ><g ><path class='s26' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s26' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /></g></g>",
     	"<style>tspan { white-space:pre }.s26 { fill: #ff9700 } </style><g ><g ><path class='s26' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s26' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /></g></g>",
     	"<style>tspan { white-space:pre }.s26 { fill: #efff00  } </style><g ><g ><path class='s26' d='m200 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /><path class='s26' d='m300 268c-11.06 0-20-8.94-20-20c0-11.06 8.94-20 20-20c11.06 0 20 8.94 20 20c0 11.06-8.94 20-20 20z' /></g></g>"
 	];
@@ -144,6 +141,7 @@ contract MyEpicNFT is ERC721URIStorage {
     	"<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>",
     	"<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m199 299.53l105-0.06' /></g></g>",
     	"<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m225.99 299.53l48.1-0.06' /></g></g>",
+		"<style>tspan { white-space:pre }.s21 { fill: #ffffff } .s91 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m235.5 306c-2.49 0-4.5-2.01-4.5-4.5c0-2.49 2.01-4.5 4.5-4.5c2.49 0 4.5 2.01 4.5 4.5c0 2.49-2.01 4.5-4.5 4.5z' /><path class='s21' d='m264.5 306c-2.49 0-4.5-2.01-4.5-4.5c0-2.49 2.01-4.5 4.5-4.5c2.49 0 4.5 2.01 4.5 4.5c0 2.49-2.01 4.5-4.5 4.5z' /><path class='s91' d='m225.99 299.53l48.1-0.06' /></g></g>"
     	"<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m262 313.96l-13.86-14.08' /><path class='s21' d='m285 313.96l-13.86-14.08' /><path class='s21' d='m215.14 313.96l13.86-14.08' /><path class='s21' d='m260.14 313.96l13.86-14.08' /><path class='s21' d='m237.14 313.96l13.86-14.08' /><path class='s21' d='m240 313.96l-13.86-14.08' /></g></g>",
     	"<style>tspan { white-space:pre }.s21 { fill: #000000;stroke: #000000;stroke-width: 5 } </style><g ><g ><path class='s21' d='m231 312.97l38.01-22.34' /><path class='s21' d='m231 312.34l38.01-22.34' /><path class='s21' d='m231 314.21l38.01-22.34' /><path class='s21' d='m269.01 314.21l-38.01-22.34' /><path class='s21' d='m269.01 312.97l-38.01-22.34' /><path class='s21' d='m269.01 314.84l-38.01-22.34' /></g></g>"
 	];
@@ -155,10 +153,13 @@ contract MyEpicNFT is ERC721URIStorage {
 	}
  
 	// Randomize attributes
-	uint256[] public numberArr = [0,1,1,2,2,0,1,2,0,2,2,2,1,0,0,1,0,1];
-	function random(uint256 input) internal returns (uint256) {
-		for (uint256 i = 0; i < numberArr.length; i++) {
-			uint256 n = uint256(keccak256(abi.encodePacked(block.difficulty))) % numberArr.length;
+	uint256[] public numberArr = [0,1,1,2,2,0,1,2,0,2,2,2,1,0,0,1,0,1,2];
+	uint256[] public numberArr_ = [0,1,2,3,4,5,6,7,8,9];
+	uint256[] public numberArr__ = [0,1,2];
+	uint256[] public numberArr___ = [0,1,2,3];
+	function random(uint256 input, uint256[] memory arr) internal returns (uint256) {
+		for (uint256 i = 0; i < arr.length; i++) {
+			uint256 n = uint256(keccak256(abi.encodePacked(block.difficulty))) % arr.length;
 			uint256 temp = numberArr[n];
 			numberArr[n] = numberArr[i];
 			numberArr[i] = temp;
@@ -178,10 +179,13 @@ contract MyEpicNFT is ERC721URIStorage {
         	newItemId < 50,
         	"50 NFTs have already been minted try again later"
     	);
-    	uint256 rand_ = random(background.length);
+
+    	uint256 rand_ = random(background.length, numberArr___);
     	string memory b = background[rand_];
+		uint256 rand__ = random(head_1.length, numberArr);
+		console.log(rand__, b);
     	string memory combinedSvg1 = string(
-        	abi.encodePacked(b,
+        	abi.encodePacked(background[numberArr[18]],
                         	stem,
                         	petal_1_1[numberArr[0]],
                         	petal_1_2[numberArr[1]],
@@ -207,13 +211,14 @@ contract MyEpicNFT is ERC721URIStorage {
         	abi.encodePacked(petal_7_1[numberArr[12]],
                         	petal_7_2[numberArr[13]],
                         	petal_8_1[numberArr[14]],
-                        	petal_8_2[numberArr[15]]
+                        	petal_8_2[numberArr[15]],
+							extra[rand_]
                         	)
     	);
     	// uint256 new_rand = rand % extra.length;
     	// uint256 new_rand_ = rand % mouth.length;
-    	uint256 new_rand = random(eye_3.length);
-    	uint256 new_rand_ = random(mouth.length);
+    	uint256 new_rand = newItemId % eye_3.length;
+    	uint256 new_rand_ = newItemId % mouth.length;
     	string memory combinedSvg5 = string(
         	abi.encodePacked(head_1[numberArr[16]],
                         	head_2[numberArr[17]],
@@ -245,6 +250,7 @@ contract MyEpicNFT is ERC721URIStorage {
                 	abi.encodePacked(
                     	'{"name": "',
                     	// set the title of our NFT as the generated word.
+						// set the attributes "attributes": [{"trait_type": "Background","value": "1"},{"trait_type": "Fur","value": "10"},{"trait_type": "Earring","value": "0"},{"trait_type": "Hat","value": "0"},{"trait_type": "Eyes","value": "0"},{"trait_type": "Clothes","value": "33"},{"trait_type": "Mouth","value": "0"}],
                     	"Test Flower",
                     	'", "description": "Cute little flowers, 100% stored and generated on chain!", "image": "data:image/svg+xml;base64,',
                     	//add data:image/svg+xml;base64 and then append our base64 encode our svg.
